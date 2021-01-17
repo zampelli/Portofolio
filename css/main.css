@@ -1,0 +1,166 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Variables */
+:root {
+  --primaryFont: "Poppins", sans-serif;
+  --secondaryFont: "Open Sans", sans-serif;
+  --primaryBTN: #007fff;
+  --darkGrey: #8e8e8e;
+  --mediumGrey: #5c5c5c;
+  --ligthBlack: #3E3939;
+  --containerPadding: 2rem;
+  --containerPaddingMobile: 0.8rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 220px;
+}
+
+/* Nav bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 160px;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 0.8rem;
+}
+
+.nav-links li > a {
+  text-decoration: none;
+  color: var(--ligthBlack);
+  font-family: var(--secondaryFont);
+  font-weight: 600;
+}
+/* -------------- */
+
+/* Hero section */
+.hero-content {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.me {
+  width: 600px;
+}
+
+.rigth {
+  margin-top: -80px;
+  margin-right: 40px;
+}
+
+.sub-header {
+  font-family: var(--primaryFont);
+  color: var(--darkGrey);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: -30px;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.hash-tags {
+  font-family: var(--primaryFont);
+  color: var(--darkGrey);
+  margin-top: -30px;
+}
+
+.buttons {
+  margin-top: 40px;
+}
+
+.btn {
+  border-radius: 6px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: var(--secondaryFont);
+}
+
+.primary {
+  background: var(--primaryBTN);
+  color: white;
+} 
+
+.secondary {
+  margin-left: 22px;
+  background: #fff;
+  color: var(--primaryBTN);
+  box-shadow: 0px 3px 11px 0px rgba(122, 122, 122, 0.4);
+}
+
+/* -------------- */
+
+/* Project section */
+.header {
+  text-align: center;
+}
+
+.header > h1 {
+  font-family: var(--primaryFont);
+  letter-spacing: 0.6px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.header > p {
+  width: 700px;
+  display: inline-block;
+  font-family: var(--secondaryFont);
+  font-size: 1rem;
+  margin-top: -20px;
+  line-height: 1.4;
+  color: var(--mediumGrey);
+}
+
+.projects-content {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+  box-shadow: 0px 3px 11px 0px rgba(122, 122, 122, 0.4);
+  padding: 2rem;
+  width: 80%;
+}
+
+.center > h1 {
+  font-family: var(--primaryFont);
+  color: var(--mediumGrey);
+}
+
+.center > p {
+ font-family: var(--secondaryFont);
+ color: var(--mediumGrey);
+}
+
+
+/* -------------- */
