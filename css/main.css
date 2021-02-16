@@ -115,52 +115,6 @@ nav {
 /* -------------- */
 
 /* Project section */
-.header {
-  text-align: center;
-}
-
-.header > h1 {
-  font-family: var(--primaryFont);
-  letter-spacing: 0.6px;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.header > p {
-  width: 700px;
-  display: inline-block;
-  font-family: var(--secondaryFont);
-  font-size: 1rem;
-  margin-top: -20px;
-  line-height: 1.4;
-  color: var(--mediumGrey);
-}
-
-.projects-content {
-  margin-top: 60px;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 10px;
-  justify-items: center;
-  align-items: center;
-}
-
-.center {
-  text-align: center;
-  box-shadow: 0px 3px 11px 0px rgba(122, 122, 122, 0.4);
-  padding: 2rem;
-  width: 80%;
-}
-
-.center > h1 {
-  font-family: var(--primaryFont);
-  color: var(--mediumGrey);
-}
-
-.center > p {
- font-family: var(--secondaryFont);
- color: var(--mediumGrey);
-}
 
 
 /* -------------- */
