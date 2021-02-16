@@ -72,6 +72,10 @@ nav {
   margin-bottom: -30px;
 }
 
+.emojy {
+  font-size: 2rem;
+}
+
 .title {
   font-size: 3rem;
   font-family: var(--primaryFont);
@@ -115,6 +119,53 @@ nav {
 /* -------------- */
 
 /* Project section */
+.heading {
+  text-align: center;
+}
 
+.heading > h1 {
+  font-size: 2.2rem;
+  font-family: var(--primaryFont);
+  font-weight: lighter;
+}
+
+.emojy2 {
+  font-size: 2.6rem;
+}
+
+.heading > p {
+  width: 50%;
+  display: inline-block;
+  margin-top: -16px;
+  line-height: 1.6;
+  font-family: var(--secondaryFont);
+  color: var(--mediumGrey);
+}
+
+.wrapper {
+  margin: 0 150px;
+}
+
+.project1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-logo {
+  width: 150px;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.left > p {
+  width: 80%;
+  font-family: var(--secondaryFont);
+  color: var(--mediumGrey);
+}
 
 /* -------------- */
