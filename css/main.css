@@ -13,6 +13,8 @@
   --containerPaddingMobile: 0.8rem;
 }
 
+/* THIS LAYOUT IS DESKTOP FIRST APPROACH */
+
 body {
   margin: 0;
   padding: 0;
@@ -28,6 +30,7 @@ nav {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  margin-right: 80px;
 }
 
 .logo {
@@ -102,6 +105,7 @@ nav {
   display: inline-block;
   font-size: 16px;
   font-family: var(--secondaryFont);
+  cursor: pointer;
 }
 
 .primary {
@@ -133,8 +137,18 @@ nav {
   font-size: 2.6rem;
 }
 
+.buttons {
+  display: flex;
+}
+
+.git-icon {
+  width: 36px;
+  margin-top: 6px;
+  margin-left: 40px;
+}
+
 .heading > p {
-  width: 50%;
+  width: 40%;
   display: inline-block;
   margin-top: -16px;
   line-height: 1.6;
@@ -142,14 +156,30 @@ nav {
   color: var(--mediumGrey);
 }
 
-.wrapper {
+.wrapper {  
   margin: 0 150px;
+}
+
+.wrapper2 {
+  margin: 0 60px;
 }
 
 .project1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.project2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-title {
+  font-family: var(--primaryFont);
+  color: var(--mediumGrey);
+  font-size: 1.8rem;
 }
 
 .project-logo {
@@ -166,6 +196,46 @@ nav {
   width: 80%;
   font-family: var(--secondaryFont);
   color: var(--mediumGrey);
+}
+
+.project2 > .right > p {
+  width: 60%;
+  font-family: var(--secondaryFont);
+  color: var(--mediumGrey);
+}
+
+.project2 > .right {
+  margin-left: 120px;
+  margin-top: -40px;
+}
+
+/* -------------- */
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 120px;
+  padding: 2rem;
+}
+
+.footer-content {
+  line-height: 0.8;
+  padding: 2rem;
+}
+
+.footer-content > h3 {
+  font-family: var(--primaryFont);
+  color: var(--mediumGrey);
+  font-weight: lighter;
+  font-size: 1.6rem;
+}
+
+.footer-content > p {
+  font-family: var(--secondaryFont);
+}
+
+span > a {
+  color: var(--primaryBTN);
 }
 
 /* -------------- */
