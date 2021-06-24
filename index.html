@@ -18,11 +18,34 @@
           <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Portofolio</a></li>
-            <li><a href="#">About</a></li>
+            <li class="about-link"><a href="#">About</a></li>
           </ul>
         </nav>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal-container">
+      <div class="modal-content">
+        <img src="/assets/images/close-btn.png" alt="" class="close-btn" />
+        <h1>About me <span class="emojy0">🧑‍💻</span></h1>
+        <div class="watermark">
+          <div class="blue">
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+          expedita. Consequuntur, fugiat praesentium deserunt blanditiis illo
+          corrupti cupiditate repellendus omnis. Eius, dolorem quas voluptas sed
+          rem reprehenderit nihil aspernatur laboriosam quos inventore? Ex
+          exercitationem minima, quas quam distinctio laborum. Similique!
+        </p>
+        <div class="button">
+          <button class="btn primary">Resume</button>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------- -->
 
     <!-- Hero section -->
     <section class="hero">
@@ -39,11 +62,11 @@
               I design and code beautifully simple things, and I love what I do.
             </h1>
             <p class="hash-tags">
-              #designer #web-developer #software-design #problem-solving
+              #designer #webdeveloper #softwaredesign #problemsolving
             </p>
             <div class="buttons">
               <button class="btn primary">Portofolio</button>
-              <button class="btn secondary">Why me?</button>
+              <button class="why-me btn secondary">Why me?</button>
             </div>
           </div>
         </div>
@@ -78,8 +101,8 @@
             fugiat magnam. Quis, deleniti!
           </p>
           <div class="buttons">
-            <a href="http://tramontisantacruz.com/"
-              ><button class="btn primary">See project</button></a
+            <a href="http://tramontisantacruz.com/" target="_blank"
+              ><button class="btn primary">Live Preview</button></a
             >
             <a href="https://github.com/zampelli/tramonti-website"
               ><img
@@ -107,7 +130,9 @@
           />
         </div>
         <div class="right">
-         <h1 class="project-title">Casa Nostra</h1>
+          <h1 class="project-title">
+            Casa Nostra <span class="orange">Restaurant</span>
+          </h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat,
             iusto reiciendis! Perspiciatis, laudantium repellat odio natus
@@ -115,10 +140,10 @@
             fugiat magnam. Quis, deleniti!
           </p>
           <div class="buttons">
-            <a href="http://tramontisantacruz.com/"
-              ><button class="btn primary">See project</button></a
+            <a href="http://ristorantecasanostra.com/" target="_blank"
+              ><button class="btn primary">Live Preview</button></a
             >
-            <a href="https://github.com/zampelli/tramonti-website"
+            <a href="https://github.com/zampelli/casanostra-redesign"
               ><img
                 class="git-icon"
                 src="/assets/images/github-icon.svg"
@@ -136,13 +161,15 @@
         <div class="footer-content">
           <h3>Let's Talk</h3>
           <p>Do you want to connect and talk about a project?</p>
-          <p>Contact me at <span><a href="#">info@zampelli.tech</a></span></p>
-          <div class="footer-icons">
-            
-          </div>
+          <p>
+            Contact me at <span><a href="#">info@zampelli.tech</a></span>
+          </p>
+          <div class="footer-icons"></div>
         </div>
       </div>
     </footer>
     <!-- ----------------- -->
+
+    <script src="/js/modal.js"></script>
   </body>
 </html>

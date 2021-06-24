@@ -1,5 +1,5 @@
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap");
 
 /* Variables */
 :root {
@@ -8,7 +8,8 @@
   --primaryBTN: #007fff;
   --darkGrey: #8e8e8e;
   --mediumGrey: #5c5c5c;
-  --ligthBlack: #3E3939;
+  --ligthBlack: #3e3939;
+  --orange: #f89c1e;
   --containerPadding: 2rem;
   --containerPaddingMobile: 0.8rem;
 }
@@ -47,6 +48,51 @@ nav {
   color: var(--ligthBlack);
   font-family: var(--secondaryFont);
   font-weight: 600;
+}
+/* -------------- */
+
+/* Modal */
+.modal-container {
+  position: relative;
+  display: none;
+  animation: fadein 0.5s;
+}
+
+.modal-content {
+  position: absolute;
+  position: fixed;
+  border-radius: 10px;
+  text-align: center;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, 50%);
+  background: #ffff;
+  padding: 1.8rem;
+  box-shadow: 1px 3px 22px 5px rgba(223, 223, 223, 0.81);
+  -webkit-box-shadow: 1px 3px 22px 5px rgba(216, 216, 216, 0.81);
+  -moz-box-shadow: 1px 3px 22px 5px rgba(199, 199, 199, 0.81);
+}
+
+.modal-content > h1 {
+  font-family: var(--primaryFont);
+  color: var(--ligthBlack);
+}
+
+.close-btn {
+  float: right;
+  margin-right: 8px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.modal-content > p {
+  width: 520px;
+  display: inline-block;
+  margin-top: -8px;
+  padding: 1rem 0;
+  line-height: 1.8;
+  font-family: var(--secondaryFont);
+  color: var(--mediumGrey);
 }
 /* -------------- */
 
@@ -111,7 +157,7 @@ nav {
 .primary {
   background: var(--primaryBTN);
   color: white;
-} 
+}
 
 .secondary {
   margin-left: 22px;
@@ -156,7 +202,7 @@ nav {
   color: var(--mediumGrey);
 }
 
-.wrapper {  
+.wrapper {
   margin: 0 150px;
 }
 
@@ -182,11 +228,15 @@ nav {
   font-size: 1.8rem;
 }
 
+.orange {
+  color: var(--orange);
+}
+
 .project-logo {
   width: 150px;
 }
 
-.left{
+.left {
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -239,3 +289,103 @@ span > a {
 }
 
 /* -------------- */
+
+/* Animations */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* -------------- */
+
+/* Media Queries */
+@media (max-width: 1490px) {
+  /* Hero sections style */
+  .me {
+    width: 460px;
+  }
+
+  .tile {
+    font-size: 2.2rem;
+  }
+  /* --------- */
+
+  /* Project Sections style */
+  .project1 {
+    margin: 60px 0;
+  }
+
+  .mockup {
+    width: 650px;
+  }
+
+  .left > p {
+    width: 100%;
+    line-height: 1.6;
+  }
+
+  .project2 .right {
+    margin-left: 80px;
+  }
+
+  .project2 .right > p {
+    width: 80%;
+    line-height: 1.6;
+  }
+  /* --------- */
+}
+
+@media (max-width: 1290px) {
+  /* Hero sections style */
+  .title {
+    font-size: 2rem;
+  }
+
+  .me {
+    width: 400px;
+  }
+  /* --------- */
+
+  /* Project Sections style */
+  .mockup {
+    width: 540px;
+  }
+
+  .left > p {
+    font-size: 0.9rem;
+  }
+
+  .project2 .right {
+    margin-left: 0px;
+  }
+
+  .project2 .right > p {
+    font-size: 0.9rem;
+  }
+  /* --------- */
+}
+
+@media (max-width: 1190px) {
+  /* Hero sections style */
+  .container {
+    margin-left: 40px;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .me {
+    display: none;
+  }
+  /* --------- */
+
+  /* Project Sections style */
+  .mockup {
+    display: none;
+  }
+  /* --------- */
+}
