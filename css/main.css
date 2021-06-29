@@ -176,7 +176,7 @@ nav {
 .heading > h1 {
   font-size: 2.2rem;
   font-family: var(--primaryFont);
-  font-weight: lighter;
+  font-weight: 500;
 }
 
 .emojy2 {
@@ -368,7 +368,7 @@ span > a {
   /* --------- */
 }
 
-@media (max-width: 1190px) {
+@media (max-width: 1200px) {
   /* Hero sections style */
   .container {
     margin-left: 40px;
@@ -383,9 +383,170 @@ span > a {
   }
   /* --------- */
 
+  /* Button style */
+  .btn {
+    padding: 10px 20px;
+  }
+  /* --------- */
+
   /* Project Sections style */
   .mockup {
     display: none;
   }
+
+  .project1 {
+    margin-top: 120px;
+  }
+
+  .project1 > .left {
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 1px 3px 22px 5px rgba(223, 223, 223, 0.81);
+    -webkit-box-shadow: 1px 3px 22px 5px rgba(216, 216, 216, 0.81);
+    -moz-box-shadow: 1px 3px 22px 5px rgba(199, 199, 199, 0.81);
+  }
+
+  .wrapper {
+    margin: 0
+  }
+  
+  .wrapper2 {
+    margin: 0
+  }
+
+  .project1 .left > p {
+    width: 320px;
+  }
+
+  .project2 {
+    margin-top: 140px;
+    
+  }
+
+  .project2 > .right {
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 1px 3px 22px 5px rgba(223, 223, 223, 0.81);
+    -webkit-box-shadow: 1px 3px 22px 5px rgba(216, 216, 216, 0.81);
+    -moz-box-shadow: 1px 3px 22px 5px rgba(199, 199, 199, 0.81);
+  }
+
+  .project2 .right > p {
+    width: 320px;
+  }
+
+  .project-title {
+    font-size: 1.4rem;
+  }
   /* --------- */
+}
+
+@media (max-width: 1040px) {
+  /* Container for nav and hero section */
+  .container {
+    padding: 0 80px;
+  }
+  /* --------- */
+}
+
+@media (max-width: 790px) {
+  /* Container for nav and hero section */
+  .container {
+    padding: 0;
+  }
+  /* --------- */
+
+  /* Nav Bar style */
+  .hide-mobile {
+    display: none;
+  }
+
+  .nav-icon {
+    width: 26px;
+  }
+  /* ------- */
+
+  /* Modal style */
+  .modal-content {
+    padding: 1.2rem;
+  }
+
+  .modal-content > h1 {
+    font-size: 1.6rem;
+  }
+
+  .modal-content > p {
+    width: 320px;
+    font-size: 0.8rem;
+  }
+
+  .close-btn {
+    width: 14px;
+  }
+  /* ------ */
+
+  /* Footer */
+  footer {
+    padding: 0;
+  }
+
+  .footer-content {
+    line-height: 1.2;
+    margin-left: -40px;
+  }
+  /* ------- */
+}
+
+@media (max-width: 478px) {
+  /* Nav Bar style */
+  .nav-links li {
+    padding: 0;
+  }
+  /* ------- */
+
+  /* Hero section style*/
+  .sub-header {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 2.1rem;
+  }
+  /* -------- */
+
+  /* Projects section style */
+  .heading > h1 {
+    font-size: 1.8rem;
+    width: 280px;
+    display: inline-block;
+  }
+
+  .heading > p {
+    width: 300px;
+  }
+
+  .project1 .left {
+    padding: 1.2rem;
+  }
+  
+  .project1 .left .project-logo {
+    width: 96px;
+  }
+
+  .project1 .left > p {
+    font-size: 0.8rem;
+  }
+
+  .project2 .right {
+    padding: 1.2rem;
+  }
+
+  .project-title {
+    font-size: 1.4rem;
+  }
+
+  .project2 .right > p {
+    font-size: 0.8rem;
+  }
+  /* -------- */
 }
