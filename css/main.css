@@ -505,6 +505,10 @@ span > a {
   /* ------- */
 
   /* Hero section style*/
+  .hero-content {
+    margin-top: -60px;
+  }
+
   .sub-header {
     font-size: 1rem;
   }
