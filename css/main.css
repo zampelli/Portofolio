@@ -179,8 +179,12 @@ nav {
   font-weight: 500;
 }
 
-.emojy2 {
-  font-size: 2.6rem;
+.emojy > img {
+  width: 36px;
+}
+
+.emojy2 > img {
+  width: 36px;
 }
 
 .buttons {
@@ -338,6 +342,12 @@ span > a {
   /* --------- */
 }
 
+@media (max-width: 1390px) {
+  .container {
+    padding: 0 120px;
+  }
+}
+
 @media (max-width: 1290px) {
   /* Hero sections style */
   .title {
@@ -415,7 +425,7 @@ span > a {
   }
 
   .project1 .left > p {
-    width: 320px;
+    width: 300px;
   }
 
   .project2 {
@@ -432,7 +442,7 @@ span > a {
   }
 
   .project2 .right > p {
-    width: 320px;
+    width: 300px;
   }
 
   .project-title {
