@@ -14,6 +14,10 @@
   --containerPaddingMobile: 0.8rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* THIS LAYOUT IS DESKTOP FIRST APPROACH */
 
 body {
@@ -236,10 +240,6 @@ nav {
   color: var(--orange);
 }
 
-.project-logo {
-  width: 150px;
-}
-
 .left {
   display: flex;
   flex-direction: column;
@@ -250,12 +250,14 @@ nav {
   width: 80%;
   font-family: var(--secondaryFont);
   color: var(--mediumGrey);
+  line-height: 1.8;
 }
 
 .project2 > .right > p {
   width: 60%;
   font-family: var(--secondaryFont);
   color: var(--mediumGrey);
+  line-height: 1.8;
 }
 
 .project2 > .right {
@@ -540,19 +542,17 @@ span > a {
   }
 
   .project1 .left {
-    padding: 1.2rem;
+    padding: 2rem;
   }
   
-  .project1 .left .project-logo {
-    width: 96px;
-  }
-
   .project1 .left > p {
     font-size: 0.8rem;
+    line-height: 1.6;
+    width: 270px;
   }
 
   .project2 .right {
-    padding: 1.2rem;
+    padding: 2rem;
   }
 
   .project-title {
@@ -561,6 +561,8 @@ span > a {
 
   .project2 .right > p {
     font-size: 0.8rem;
+    line-height: 1.6;
+    width: 260px;
   }
   /* -------- */
 }
